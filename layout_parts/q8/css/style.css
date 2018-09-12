@@ -1,5 +1,334 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.small-btn-wrapper {
+  display: inline-block;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
 
+.small-common {
+  display: table-cell;
+  height: 26px;
+  padding: 0 15px;
+  background: #00bcd4;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.small-error {
+  display: table-cell;
+  height: 26px;
+  padding: 0 15px;
+  background: #ff4081;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.small-disabled {
+  display: table-cell;
+  height: 26px;
+  padding: 0 15px;
+  background: #e5e5e5;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.small-shadow {
+  display: table-cell;
+  vertical-align: middle;
+  height: 26px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #222;
+  border-radius: 3px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+
+.middle-btn-wrapper {
+  display: inline-block;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.middle-common {
+  display: table-cell;
+  height: 32px;
+  padding: 0 20px;
+  background: #00bcd4;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.middle-error {
+  display: table-cell;
+  height: 32px;
+  padding: 0 20px;
+  background: #ff4081;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.middle-disabled {
+  display: table-cell;
+  height: 32px;
+  padding: 0 20px;
+  background: #e5e5e5;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.middle-shadow {
+  display: table-cell;
+  vertical-align: middle;
+  height: 32px;
+  padding: 0 20px;
+  font-size: 20px;
+  color: #222;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+
+.large-btn-wrapper {
+  display: inline-block;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.large-common {
+  display: table-cell;
+  height: 38px;
+  padding: 0 25px;
+  background: #00bcd4;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+.large-error {
+  display: table-cell;
+  height: 38px;
+  padding: 0 25px;
+  background: #ff4081;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+.large-disabled {
+  display: table-cell;
+  height: 38px;
+  padding: 0 25px;
+  background: #e5e5e5;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+.large-shadow {
+  display: table-cell;
+  vertical-align: middle;
+  height: 38px;
+  padding: 0 25px;
+  font-size: 24px;
+  color: #222;
+  border-radius: 7px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.q8-form {
+  width: 700px;
+  background: #ECF1F2;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.q8-form-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.q8-form-title::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  content: "";
+}
+
+.q8-form-title-text {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  background: #ecf1f2;
+  padding-right: 10px;
+}
+
+.q8-form-left {
+  float: left;
+  width: 300px;
+}
+
+.q8-menu {
+  margin-bottom: 20px;
+}
+
+.q8-form-menu .is-required {
+  color: #f00;
+}
+
+p.q8-form-menu {
+  float: left;
+  width: 100px;
+  margin-bottom: 20px;
+  text-align: right;
+  line-height: 25px;
+}
+
+.q8-form-menu-content {
+  float: right;
+  width: 180px;
+}
+
+.q8-item-content {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  line-height: 12px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 12px;
+  border: none;
+}
+
+.q8-options-select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  line-height: 12px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 12px;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.q8-options {
+  position: relative;
+}
+
+.q8-options:after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  transform: rotate(45deg);
+  pointer-events: none;
+  content: '';
+}
+
+.q8-form-btn {
+  float: right;
+}
+
+.q8-form-right {
+  float: right;
+  width: 380px;
+}
+
+.q8-form-comment {
+  width: 100%;
+  padding: 10px;
+  height: 203px;
+  border-radius: 3px;
+  line-height: 12px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 12px;
+  border: none;
+  resize: none;
+}
+
+.q8-ck {
+  text-align: right;
+}
+
+.q8-ck-box {
+  display: none;
+}
+
+.q8-btn {
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.q8-ck-btn-text {
+  position: relative;
+  padding-left: 24px;
+}
+
+.q8-ck-btn-text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -9px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  content: "";
+  background: #fff;
+}
+
+.q8-ck-box:checked +
+.q8-ck-btn-text::after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+
+li {
+  list-style: none;
+}
 /* 回答はここに書いてね */

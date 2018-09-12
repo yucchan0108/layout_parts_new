@@ -31,26 +31,31 @@
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+              <div class="small-btn-wrapper">
+                <div class="small-common">common</div>
+                <div class="small-error">error</div>
+                <div class="small-disabled">disabled</div>
+                <div class="small-shadow">shadow</div>
+              </div>
           </div>
-
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="middle-btn-wrapper">
+              <div class="middle-common">common</div>
+              <div class="middle-error">error</div>
+              <div class="middle-disabled">disabled</div>
+              <div class="middle-shadow">shadow</div>
+            </div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="large-btn-wrapper">
+              <div class="large-common">common</div>
+              <div class ="large-error">error</div>
+              <div class="large-disabled">disabled</div>
+              <div class="large-shadow">shadow</div>
+            </div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -98,7 +103,75 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+          <div class="q8-form">
+            <div class="q8-form-title">
+              <p class="q8-form-title-text">Form Exercise</p>
+            </div>
+              <div class="q8-form-main clearfix">
+                <div class="q8-form-left">
+                  <form action="file:///Users/nakajima_yumi/Desktop/layout_parts_new/layout_parts/q8/index.html" method="post" accept-charset="utf-8">
+                  <ul class="q8-menu">
+                  <li class="clearfix">
+                    <p class="q8-form-menu">名前
+                      <span class="is-required">*</span>
+                    </p>
+                    <div class="q8-form-menu-content">
+                      <input class="q8-item-content" type="text" name="name" required>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <p class="q8-form-menu">性別</p>
+                    <div class="q8-form-menu-content">
+                      <label class="q8-radio">
+                        <input type="radio" name="sex" value="male">男性
+                        <input type="radio" name="sex" value="female">女性
+                      </label>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <p class="q8-form-menu">出身</p>
+                    <div class="q8-form-menu-content q8-options">
+                      <select name="options" class="q8-options-select">
+                        <option value="option-1">東京</option>
+                        <option value="option-2">埼玉</option>
+                        <option value="option-3">千葉</option>
+                        <option value="option-4">神奈川</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <p class="q8-form-menu">Eメール
+                      <span class="is-required">*</span>
+                    </p>
+                    <div class="q8-form-menu-content">
+                      <input class="q8-item-content" type="text" placeholder="ex)hoge@gmail.com" name="email" required>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <p class="q8-form-menu">電話番号</p>
+                    <div class="q8-form-menu-content">
+                      <input class="q8-item-content" type="text" placeholder ="ex)08012345678" name="phonenumber">
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="q8-form-menu-content">
+                      <div class="q8-ck">
+                        <input class="q8-ck-box" id="q8-ck-btn" type="checkbox" name="20years">
+                        <label for="q8-ck-btn" class="q8-ck-btn-text"> 20歳以上です</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                  <div class="q8-form-btn">
+                    <button class="q8-btn" type="submit">送信</button>
+                  </div>
+                </form>
+                </div>
+                <div class="q8-form-right">
+                  <textarea class="q8-form-comment" name="comment" placeholder="何かあれば入力してください。"></textarea> 
+                </div>
+            </div>
+          </div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
