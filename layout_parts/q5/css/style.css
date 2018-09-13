@@ -2,7 +2,7 @@
 
 /* 回答はここに書いてね */
 
-.wrapper-box {
+.q5-wrapper-box {
   position: relative;
   background: #ECF1F2;
   width: 500px;
@@ -35,8 +35,6 @@
   left: 120px;
   z-index: 8;
   background: #de70cf;
-  background: #de70cf;
-  display: table-cell;
 }
 
 .q5-box.no5 {

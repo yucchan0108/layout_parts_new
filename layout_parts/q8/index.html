@@ -31,31 +31,25 @@
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-              <div class="small-btn-wrapper">
-                <div class="small-common">common</div>
-                <div class="small-error">error</div>
-                <div class="small-disabled">disabled</div>
-                <div class="small-shadow">shadow</div>
-              </div>
+              <div class="q8_btn q8_btn_small q8-common">common</div>
+              <div class="q8_btn q8_btn_small q8-error">error</div>
+              <div class="q8_btn q8_btn_small q8-disabled">disabled</div>
+              <div class="q8_btn q8_btn_small q8-shadow">shadow</div>
           </div>
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div class="middle-btn-wrapper">
-              <div class="middle-common">common</div>
-              <div class="middle-error">error</div>
-              <div class="middle-disabled">disabled</div>
-              <div class="middle-shadow">shadow</div>
-            </div>
+            <div class="q8_btn q8_btn_middle q8-common">common</div>
+            <div class="q8_btn q8_btn_middle q8-error">error</div>
+            <div class="q8_btn q8_btn_middle q8-disabled">disabled</div>
+            <div class="q8_btn q8_btn_middle q8-shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div class="large-btn-wrapper">
-              <div class="large-common">common</div>
-              <div class ="large-error">error</div>
-              <div class="large-disabled">disabled</div>
-              <div class="large-shadow">shadow</div>
-            </div>
+            <div class="q8_btn q8_btn_large q8-common">common</div>
+            <div class="q8_btn q8_btn_large q8-error">error</div>
+            <div class="q8_btn q8_btn_large q8-disabled">disabled</div>
+            <div class="q8_btn q8_btn_large q8-shadow">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -112,26 +106,26 @@
                   <form action="file:///Users/nakajima_yumi/Desktop/layout_parts_new/layout_parts/q8/index.html" method="post" accept-charset="utf-8">
                   <ul class="q8-menu">
                   <li class="clearfix">
-                    <p class="q8-form-menu">名前
-                      <span class="is-required">*</span>
-                    </p>
+                    <p class="q8-form-menu">名前<span class="is-required">*</span></p>
                     <div class="q8-form-menu-content">
-                      <input class="q8-item-content" type="text" name="name" required>
+                      <input class="q8-item-content q8-item-content-init" type="text" name="name" required="">
                     </div>
                   </li>
                   <li class="clearfix">
                     <p class="q8-form-menu">性別</p>
                     <div class="q8-form-menu-content">
                       <label class="q8-radio">
-                        <input type="radio" name="sex" value="male">男性
-                        <input type="radio" name="sex" value="female">女性
+                        <input class="q8-radio-btn" type="radio" name="sex" value="male"><span class="q8-radio-text">男性</span>
+                      </label>
+                      <label class="q8-radio">
+                        <input class="q8-radio-btn" type="radio" name="sex" value="female"><span class="q8-radio-text">女性</span>
                       </label>
                     </div>
                   </li>
                   <li class="clearfix">
                     <p class="q8-form-menu">出身</p>
                     <div class="q8-form-menu-content q8-options">
-                      <select name="options" class="q8-options-select">
+                      <select name="options" class="q8-options-select q8-item-content-init">
                         <option value="option-1">東京</option>
                         <option value="option-2">埼玉</option>
                         <option value="option-3">千葉</option>
@@ -140,17 +134,15 @@
                     </div>
                   </li>
                   <li class="clearfix">
-                    <p class="q8-form-menu">Eメール
-                      <span class="is-required">*</span>
-                    </p>
+                    <p class="q8-form-menu">Eメール<span class="is-required">*</span></p>
                     <div class="q8-form-menu-content">
-                      <input class="q8-item-content" type="text" placeholder="ex)hoge@gmail.com" name="email" required>
+                      <input class="q8-item-content q8-item-content-init" type="text" placeholder="ex) hoge@gmail.com" name="email" required>
                     </div>
                   </li>
                   <li class="clearfix">
                     <p class="q8-form-menu">電話番号</p>
                     <div class="q8-form-menu-content">
-                      <input class="q8-item-content" type="text" placeholder ="ex)08012345678" name="phonenumber">
+                      <input class="q8-item-content q8-item-content-init" type="text" placeholder ="ex) 08012345678" name="phonenumber">
                     </div>
                   </li>
                   <li class="clearfix">
@@ -161,14 +153,14 @@
                       </div>
                     </div>
                   </li>
-                </ul>
+                  </ul>
                   <div class="q8-form-btn">
-                    <button class="q8-btn" type="submit">送信</button>
+                    <button class="q8-submit-btn q8-item-content-init" type="submit">送信</button>
                   </div>
                 </form>
                 </div>
                 <div class="q8-form-right">
-                  <textarea class="q8-form-comment" name="comment" placeholder="何かあれば入力してください。"></textarea> 
+                  <textarea class="q8-form-comment q8-item-content-init" name="message" placeholder="何かあれば入力してください。"></textarea>
                 </div>
             </div>
           </div>

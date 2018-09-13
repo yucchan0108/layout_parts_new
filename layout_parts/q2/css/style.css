@@ -1,13 +1,6 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.clearfix:before,
-.clearfix:after {
-  display: block;
-  content: "";
-  clear:both;
-}
-
 .text-wrapper {
   width: 900px;
   background: #eff3f4;
@@ -20,7 +13,7 @@
   margin-right: 20px;
   margin-bottom: 10px;
 }
-div.top {
+.text {
   font-size: 18px;
   line-height: 22px;
   white-space: normal;
@@ -31,12 +24,5 @@ div.top {
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
-}
-
-div.bottom {
-  font-size: 18px;
-  line-height: 22px;
-  white-space: normal;
-  word-break: break-all;
 }
 /* 回答はここに書いてね */

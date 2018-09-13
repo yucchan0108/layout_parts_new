@@ -5,16 +5,18 @@
   padding: 20px;
 }
 
-.table-1 {
+.table {
   display: table;
   width: 100%;
-  padding-bottom: 20px;
 }
 
-.table-1 .cell-1 {
+.table:first-child {
+  margin-bottom: 20px;
+}
+
+.cell-1 {
   display: table-cell;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -32,16 +34,9 @@
   width: 100px;
 }
 
-.table-2 {
-  display: table;
-  width: 100%;
-  padding-top: 20px;
-}
-
-.table-2 .cell-2 {
+.cell-2 {
   display: table-cell;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   text-align: center;
 }
 

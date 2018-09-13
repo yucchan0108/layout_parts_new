@@ -1,153 +1,55 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.small-btn-wrapper {
+.q8_btn {
   display: inline-block;
-  border-collapse: separate;
-  border-spacing: 10px;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.small-common {
-  display: table-cell;
-  height: 26px;
+.q8_btn:first-of-type {
+  margin-left: 0;
+}
+
+.q8_btn_small {
   padding: 0 15px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.q8_btn_middle {
+  padding: 0 20px;
+  line-height: 32px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.q8_btn_large {
+  padding: 0 25px;
+  line-height: 38px;
+  font-size: 24px;
+  border-radius: 7px;
+}
+
+.q8-common {
   background: #00bcd4;
-  font-size: 16px;
   color: #fff;
-  border-radius: 3px;
-  vertical-align: middle;
 }
 
-.small-error {
-  display: table-cell;
-  height: 26px;
-  padding: 0 15px;
+.q8-error {
   background: #ff4081;
-  font-size: 16px;
   color: #fff;
-  border-radius: 3px;
-  vertical-align: middle;
 }
 
-.small-disabled {
-  display: table-cell;
-  height: 26px;
-  padding: 0 15px;
+.q8-disabled {
   background: #e5e5e5;
-  font-size: 16px;
   color: #fff;
-  border-radius: 3px;
-  vertical-align: middle;
 }
 
-.small-shadow {
-  display: table-cell;
-  vertical-align: middle;
-  height: 26px;
-  padding: 0 15px;
-  font-size: 16px;
+.q8-shadow {
   color: #222;
-  border-radius: 3px;
-  box-shadow: 0 1px 6px rgba(0,0,0,.12);
-}
-
-.middle-btn-wrapper {
-  display: inline-block;
-  border-collapse: separate;
-  border-spacing: 10px;
-}
-
-.middle-common {
-  display: table-cell;
-  height: 32px;
-  padding: 0 20px;
-  background: #00bcd4;
-  font-size: 20px;
-  color: #fff;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-.middle-error {
-  display: table-cell;
-  height: 32px;
-  padding: 0 20px;
-  background: #ff4081;
-  font-size: 20px;
-  color: #fff;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-.middle-disabled {
-  display: table-cell;
-  height: 32px;
-  padding: 0 20px;
-  background: #e5e5e5;
-  font-size: 20px;
-  color: #fff;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-.middle-shadow {
-  display: table-cell;
-  vertical-align: middle;
-  height: 32px;
-  padding: 0 20px;
-  font-size: 20px;
-  color: #222;
-  border-radius: 5px;
-  box-shadow: 0 1px 6px rgba(0,0,0,.12);
-}
-
-.large-btn-wrapper {
-  display: inline-block;
-  border-collapse: separate;
-  border-spacing: 10px;
-}
-
-.large-common {
-  display: table-cell;
-  height: 38px;
-  padding: 0 25px;
-  background: #00bcd4;
-  font-size: 24px;
-  color: #fff;
-  border-radius: 7px;
-  vertical-align: middle;
-}
-
-.large-error {
-  display: table-cell;
-  height: 38px;
-  padding: 0 25px;
-  background: #ff4081;
-  font-size: 24px;
-  color: #fff;
-  border-radius: 7px;
-  vertical-align: middle;
-}
-
-.large-disabled {
-  display: table-cell;
-  height: 38px;
-  padding: 0 25px;
-  background: #e5e5e5;
-  font-size: 24px;
-  color: #fff;
-  border-radius: 7px;
-  vertical-align: middle;
-}
-
-.large-shadow {
-  display: table-cell;
-  vertical-align: middle;
-  height: 38px;
-  padding: 0 25px;
-  font-size: 24px;
-  color: #222;
-  border-radius: 7px;
   box-shadow: 0 1px 6px rgba(0,0,0,.12);
 }
 
@@ -198,14 +100,21 @@
   margin-bottom: 20px;
 }
 
+.q8-menu > li {
+  margin-top: 20px;
+}
+
+.q8-menu > li:first-child {
+  margin-top: 0;
+}
+
 .q8-form-menu .is-required {
   color: #f00;
 }
 
-p.q8-form-menu {
+.q8-form-menu {
   float: left;
   width: 100px;
-  margin-bottom: 20px;
   text-align: right;
   line-height: 25px;
 }
@@ -214,6 +123,17 @@ p.q8-form-menu {
   float: right;
   width: 180px;
 }
+.q8-item-content-init {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .q8-item-content {
   width: 100%;
@@ -221,9 +141,50 @@ p.q8-form-menu {
   border-radius: 3px;
   line-height: 12px;
   box-sizing: border-box;
-  background: #fff;
+  background-color: #fff;
   font-size: 12px;
-  border: none;
+}
+
+.q8-item-content:focus {
+  box-shadow: 0 0 7px #00BCD4;
+}
+
+.q8-radio {
+  cursor: pointer;
+}
+
+.q8-radio-btn {
+  display: none;
+}
+
+.q8-radio-text {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+.q8-radio-text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+
+.q8-radio-btn:checked + .q8-radio-text:after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
 }
 
 .q8-options-select {
@@ -236,6 +197,7 @@ p.q8-form-menu {
   font-size: 12px;
   border: none;
   -webkit-appearance: none;
+  cursor: pointer;
 }
 
 .q8-options {
@@ -267,15 +229,17 @@ p.q8-form-menu {
 
 .q8-form-comment {
   width: 100%;
-  padding: 10px;
   height: 203px;
+  padding: 10px;
   border-radius: 3px;
-  line-height: 12px;
   box-sizing: border-box;
   background: #fff;
   font-size: 12px;
-  border: none;
   resize: none;
+}
+
+.q8-form-comment:focus {
+  box-shadow: 0 0 7px #00BCD4;
 }
 
 .q8-ck {
@@ -286,7 +250,7 @@ p.q8-form-menu {
   display: none;
 }
 
-.q8-btn {
+.q8-submit-btn {
   padding: 0 10px;
   border-radius: 5px;
   background: #00bcd4;
@@ -297,12 +261,17 @@ p.q8-form-menu {
   cursor: pointer;
 }
 
+.q8-submit-btn:action {
+  background-color: #FFF;
+  color: #00BCD4;
+}
+
 .q8-ck-btn-text {
   position: relative;
   padding-left: 24px;
 }
 
-.q8-ck-btn-text::before {
+.q8-ck-btn-text:before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -315,7 +284,7 @@ p.q8-form-menu {
 }
 
 .q8-ck-box:checked +
-.q8-ck-btn-text::after {
+.q8-ck-btn-text:after {
   position: absolute;
   top: 50%;
   left: 6px;
@@ -325,10 +294,6 @@ p.q8-form-menu {
   border-right: 3px solid #00BCD4;
   border-bottom: 3px solid #00BCD4;
   transform: rotate(45deg);
-  content: '';
-}
-
-li {
-  list-style: none;
+  content: "";
 }
 /* 回答はここに書いてね */
