@@ -26,15 +26,12 @@
   margin-left: 20px;
 }
 
-.boxmodel {
+.boxmodel-text {
+  font-size: 16px;
+  line-height: 16px;
   width: 170px;
   background: #eaf4ff;
   border: 10px solid #022336;
   padding: 20px;
-}
-
-.boxmodel-text {
-  font-size: 16px;
-  line-height: 16px;
 }
 /* 回答はここに書いてね */
