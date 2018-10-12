@@ -28,7 +28,7 @@
   background: #ecf1f2;
 }
 
-.menus tr:last-child {
+.menu tr:last-child {
   border-top: dashed 2px #000;
 }
 /* 回答はここに書いてね */
